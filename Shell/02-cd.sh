@@ -1,3 +1,7 @@
+function cdsh {
+    cd $HOME/Shell
+}
+
 function cdg {
     cd $HOME/GitHub/$1
 }
