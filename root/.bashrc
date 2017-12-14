@@ -21,4 +21,4 @@ do
     . "$i"
 done
 
-export PS1='[\u@\h] $PWD$ '
+export PS1='[\u@\h $PWD]# '
