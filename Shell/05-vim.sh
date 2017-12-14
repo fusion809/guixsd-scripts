@@ -3,3 +3,7 @@ function vsh {
     vim
     popd
 }
+
+function vrm {
+    vim README.md
+}
