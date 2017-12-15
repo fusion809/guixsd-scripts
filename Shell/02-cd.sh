@@ -10,6 +10,14 @@ function cdgm {
     cdg "mine/$1"
 }
 
+function cdcf {
+    cdgm "config/$1"
+}
+
+function cdgc {
+    cdcf "GuixSD-configs/$1"
+}
+
 function cded {
     cdgm "editors/$1"
 }

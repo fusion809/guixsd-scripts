@@ -15,3 +15,7 @@ function update {
 }
 
 alias guixup=update
+
+function reconf {
+    sudo guix system reconfigure /etc/config.scm --cores=3 --max-jobs=10
+}
