@@ -1,5 +1,5 @@
 function gpi {
-    sudo guix package -i -c 3 "$@"
+    sudo guix package -i "$@"
 }
 
 function gpr {
@@ -11,5 +11,11 @@ function gps {
 }
 
 function update {
-    sudo guix pull && sudo guix package -u -c 3
+    sudo guix pull && sudo guix package -u
+}
+
+alias guixup=update
+
+function reconf {
+    sudo guix system reconfigure /etc/config.scm --cores=3 --max-jobs=10
 }
